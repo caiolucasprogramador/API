@@ -10,6 +10,8 @@ Uma API RESTful simples para gerenciar o cadastro de usuários. Permite criar, l
 * **Prisma:** ORM de próxima geração para Node.js e TypeScript.
      * **@prisma/client:** Cliente do Prisma gerado automaticamente para interagir com o banco de dados MongoDB de forma segura e tipada.
 * **MongoDB:** Banco de dados NoSQL utilizado para persistência dos dados.
+* **Postman:** Uma plataforma popular para construir e testar APIs. Você pode baixá-lo em [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
+* **VS Code com a extensão Thunder Client (Opcional):** Uma alternativa integrada ao VS Code para testar APIs REST. Você pode encontrá-la na barra de extensões do VS Code.
 
 ## Pré-requisitos
 
@@ -21,8 +23,8 @@ Uma API RESTful simples para gerenciar o cadastro de usuários. Permite criar, l
 
 1.  Clone o repositório:
     ```bash
-    git clone [https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
-    cd [nome do seu repositório]
+    git clone https://github.com/caiolucasprogramador/API.git
+    cd API
     ```
 
 2.  Instale as dependências do projeto:
@@ -46,30 +48,6 @@ Uma API RESTful simples para gerenciar o cadastro de usuários. Permite criar, l
 
 
 ## Como Executar a API
-
-No terminal, execute os seguintes comandos na ordem:
-
-1.  **Gerar o Prisma Client:** Este comando garante que o seu código tenha acesso à interface de banco de dados atualizada com base no seu `schema.prisma`.
-    ```bash
-    npx prisma generate
-    ```
-
-2.  **Executar o backend da API:** Este comando inicia o seu servidor Node.js.
-    ```bash
-    node server/server.js
-    ```
-
-3.  **Acessar o Prisma Studio (Opcional):** Esta ferramenta oferece uma interface visual para interagir com o seu banco de dados MongoDB.
-    ```bash
-    npx prisma studio
-    ```
-
-4.  **Visualizar o Frontend (Opcional):** Se você tiver um frontend HTML separado, siga estas instruções:
-    * Instale a extensão Live Server no VSCODE (se ainda não tiver).
-    * Abra o arquivo `index.html` (ou o arquivo HTML principal do seu frontend).
-    * Clique com o botão direito no arquivo e selecione "Open with Live Server" para visualizar a interface no seu navegador.## Como Executar a API
-
-
 
 No terminal, execute os seguintes comandos na ordem:
 
