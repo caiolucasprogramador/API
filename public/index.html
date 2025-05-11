@@ -1,0 +1,93 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerenciamento de Usuários</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Gerenciamento de Usuários</h1>
+
+        <div class="form-container">
+            <h2>Criar Novo Usuário</h2>
+            <form id="createUserForm">
+                <div>
+                    <label for="create-name">Nome:</label>
+                    <input type="text" id="create-name" required>
+                </div>
+                <div>
+                    <label for="create-email">Email:</label>
+                    <input type="email" id="create-email" required>
+                </div>
+                <div>
+                    <label for="create-age">Idade:</label>
+                    <input type="number" id="create-age">
+                </div>
+                <div>
+                    <label for="create-description">Descrição:</label>
+                    <textarea id="create-description"></textarea>
+                </div>
+                <div>
+                    <label for="create-interests">Interesses (separados por vírgula):</label>
+                    <input type="text" id="create-interests">
+                </div>
+                <button type="submit">Criar Usuário</button>
+                <div id="create-message" class="message"></div>
+            </form>
+        </div>
+
+        <div class="list-container">
+            <h2>Lista de Usuários</h2>
+            <ul id="user-list">
+            </ul>
+            <div id="list-message" class="message"></div>
+            <button id="list-users-button">Listar Usuários</button>
+        </div>
+
+        <div class="form-container">
+            <h2>Atualizar Usuário</h2>
+            <form id="updateUserForm">
+                <div>
+                    <label for="update-id">ID do Usuário a Atualizar:</label>
+                    <input type="text" id="update-id" required>
+                </div>      
+                <div>
+                    <label for="update-name">Novo Nome:</label>
+                    <input type="text" id="update-name">
+                </div>
+                <div>
+                    <label for="update-email">Novo Email:</label>
+                    <input type="email" id="update-email">
+                </div>
+                <div>
+                    <label for="update-age">Nova Idade:</label>
+                    <input type="number" id="update-age">
+                </div>
+                <div>
+                    <label for="update-description">Nova Descrição:</label>
+                    <textarea id="update-description"></textarea>
+                </div>
+                <div>
+                    <label for="update-interests">Novos Interesses (separados por vírgula):</label>
+                    <input type="text" id="update-interests">
+                </div>
+                <button type="submit">Atualizar Usuário</button>
+                <div id="update-message" class="message"></div>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Deletar Usuário</h2>
+            <form id="deleteUserForm">
+                <div>
+                    <label for="delete-id">ID do Usuário a Deletar:</label>
+                    <input type="text" id="delete-id" required>
+                </div>
+                <button type="submit">Deletar Usuário</button>
+                <div id="delete-message" class="message"></div>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>

@@ -1,0 +1,94 @@
+# Cadastro de Usuários
+
+Uma API RESTful simples para gerenciar o cadastro de usuários. Permite criar, ler e potencialmente atualizar informações de usuários para integração com aplicações web ou mobile. Os usuários são identificados por um ID automático gerado pela API.
+
+## Tecnologias Utilizadas
+
+* **Node.js:** Ambiente para executar JavaScript do lado do servidor.
+* **Express (ou outro framework Node.js):** Framework web para construir a API.
+  **cors:** Middleware para habilitar o Cross-Origin Resource Sharing.
+* **Prisma:** ORM de próxima geração para Node.js e TypeScript.
+     * **@prisma/client:** Cliente do Prisma gerado automaticamente para interagir com o banco de dados MongoDB de forma segura e tipada.
+* **MongoDB:** Banco de dados NoSQL utilizado para persistência dos dados.
+
+## Pré-requisitos
+
+* [Node.js](https://nodejs.org/) (versão mínima recomendada)
+* [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/) (gerenciadores de pacotes)
+* [Docker](https://www.docker.com/) (opcional, se você estiver usando para o MongoDB)
+
+## Instalação
+
+1.  Clone o repositório:
+    ```bash
+    git clone [https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
+    cd [nome do seu repositório]
+    ```
+
+2.  Instale as dependências do projeto:
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
+
+3.  Configure as variáveis de ambiente:
+    * Copie o arquivo `.env.example` para `.env`. No terminal, você pode usar:
+        ```bash
+        # Para sistemas Unix/Linux/macOS
+        cp .env.example .env
+        # Para Windows (PowerShell)
+        Copy-Item .env.example .env
+        # Para Windows (CMD)
+        copy .env.example .env
+        ```
+    * Abra o arquivo `.env` e substitua os placeholders com as suas informações de configuração reais, como a URL de conexão com o MongoDB (`DATABASE_URL`).
+
+
+## Como Executar a API
+
+No terminal, execute os seguintes comandos na ordem:
+
+1.  **Gerar o Prisma Client:** Este comando garante que o seu código tenha acesso à interface de banco de dados atualizada com base no seu `schema.prisma`.
+    ```bash
+    npx prisma generate
+    ```
+
+2.  **Executar o backend da API:** Este comando inicia o seu servidor Node.js.
+    ```bash
+    node server/server.js
+    ```
+
+3.  **Acessar o Prisma Studio (Opcional):** Esta ferramenta oferece uma interface visual para interagir com o seu banco de dados MongoDB.
+    ```bash
+    npx prisma studio
+    ```
+
+4.  **Visualizar o Frontend (Opcional):** Se você tiver um frontend HTML separado, siga estas instruções:
+    * Instale a extensão Live Server no VSCODE (se ainda não tiver).
+    * Abra o arquivo `index.html` (ou o arquivo HTML principal do seu frontend).
+    * Clique com o botão direito no arquivo e selecione "Open with Live Server" para visualizar a interface no seu navegador.## Como Executar a API
+
+
+
+No terminal, execute os seguintes comandos na ordem:
+
+1.  **Gerar o Prisma Client:** Este comando garante que o seu código tenha acesso à interface de banco de dados atualizada com base no seu `schema.prisma`.
+    ```bash
+    npx prisma generate
+    ```
+
+2.  **Executar o backend da API:** Este comando inicia o seu servidor Node.js.
+    ```bash
+    node server/server.js
+    ```
+
+3.  **Acessar o Prisma Studio (Opcional):** Esta ferramenta oferece uma interface visual para interagir com o seu banco de dados MongoDB.
+    ```bash
+    npx prisma studio
+    ```
+
+4.  **Visualizar o Frontend (Opcional):** Se você tiver um frontend HTML separado, siga estas instruções:
+    * Instale a extensão Live Server no VSCODE (se ainda não tiver).
+    * Abra o arquivo `index.html` (ou o arquivo HTML principal do seu frontend).
+    * Clique com o botão direito no arquivo e selecione "Open with Live Server" para visualizar a interface no seu navegador.
