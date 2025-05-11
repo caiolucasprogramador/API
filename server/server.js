@@ -127,6 +127,3 @@ app.delete("/usuarios/:id", async (req, res) => {
 
 app.listen(3000)
 
-
-/* caio
-rrhaMJHaxzuhl32N */
